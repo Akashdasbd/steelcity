@@ -1,0 +1,65 @@
+.working-process {
+    margin-bottom: 120px;
+
+    .working-process-text {
+        .section-title {
+            margin-bottom: 40px;
+
+            h5 {
+                color: var(--black);
+            }
+
+            h4 {
+                margin-bottom: 15px;
+            }
+        }
+    }
+
+    .working-process-items {
+        .working-process-item {
+            padding: 40px;
+            box-shadow: 0px 0px 60px 0px rgba(0, 0, 0, 0.05);
+            margin-bottom: 68px;
+            position: relative;
+            .info {
+                gap: 20px;
+                .text {
+                    font-family: var(--font-secondary);
+                    font-size: 24px;
+                    font-weight: 700;
+                    line-height: 30px;
+                    max-width: 118px;
+                }
+            }
+            .number{
+                h3{
+                    color: rgba(23, 23, 23, 0.2);
+                }
+            }
+            &::before{
+                position: absolute;
+                content: "";
+                top: 100%;
+                right: 94px;
+                height: 64px;
+                width: 315px;
+                background-image: url("..//..//img/working-process/shape-for-odd.png");
+            }
+            &:nth-child(even){
+                flex-direction: row-reverse;
+                &::before{
+                    position: absolute;
+                    content: "";
+                    top: 100%;
+                    left: 92px;
+                    height: 64px;
+                    width: 315px;
+                    background-image: url("..//..//img/working-process/shape-for-even.png");
+                }
+            }
+            &:last-child::before{
+                display: none;
+            }
+        }
+    }
+}

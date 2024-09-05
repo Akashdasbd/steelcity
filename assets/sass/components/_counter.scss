@@ -1,0 +1,40 @@
+.counter-area {
+    margin-bottom: 120px;
+
+    .counter-main {
+        background-color: rgba(255, 255, 255, 1);
+        box-shadow: 0px 0px 60px 0px rgba(0, 0, 0, 0.05);
+        border-left: 2px solid rgba(223, 35, 57, 1);
+        border-radius: 5px;
+        padding: 22px;
+        gap: 20px;
+
+        .counter-img {
+            img {
+                width: 80px;
+            }
+        }
+
+        .counter-text {
+            h3 {
+                font-family: var(--font-secondary);
+                font-size: 48px;
+                font-weight: 700;
+                line-height: 60px;
+                span{
+                    font-size: 41px;
+                    font-weight: 700;
+                    font-family: var(--font-secondary);
+                    color: var(--blick);
+                }
+            }
+
+            span {
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 30px;
+                color: var(--paragraph-color);
+            }
+        }
+    }
+}

@@ -1,0 +1,74 @@
+/*=============================
+	04. Banner part
+===============================*/
+
+/* Banner area one start */
+.banner-area-one {
+    background-image: url("..//..//img/bg/banner-bg.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    min-height: calc(100vh - 80px);
+    position: relative;
+
+    .banner-shape {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 50%;
+        height: 100%;
+        object-fit: cover;
+
+        .primary-colour {
+            fill: var(--primary);
+        }
+
+        .black-colour {
+            fill: var(--black)
+        }
+    }
+
+    .banner-text {
+        padding: 100px 0 100px 0;
+
+        .banner-sub-titel {
+            color: var(--primary);
+            font-family: var(--font-secondary);
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 27px;
+            letter-spacing: 4px;
+            margin-bottom: 10ppx;
+        }
+
+        .banner-titel {
+            color: var(--black);
+            font-family: var(--font-secondary);
+            font-size: 48px;
+            font-weight: 700;
+            line-height: 65.2px;
+            padding-right: 80px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            max-width: 502px;
+            color: var(--black);
+            margin-bottom: 34px;
+        }
+    }
+
+    .banner-image {
+        position: relative;
+        width: 550px;
+        height: calc(100vh - 100px);
+
+        img {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 70px;
+            max-width: 100%;
+        }
+    }
+}

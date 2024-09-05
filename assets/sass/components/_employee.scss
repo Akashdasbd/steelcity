@@ -1,0 +1,108 @@
+.employees-area {
+    margin-bottom: 120px;
+    .section-title {
+        .sub-title {
+            color: var(--black);
+        }
+    }
+
+    .employess-main {
+        .employess-slider{
+            .slick-list {
+                padding: 20px 0;
+                margin: -20px 0;
+            }
+            ul.slick-dots {
+                display: flex;
+                justify-content: center;
+                list-style: none;
+                gap: 16px;
+                margin-top: 40px;
+                li  {
+                    font-size: 0px;
+                    width: 10px;
+                    height: 10px;
+                    border: none;
+                    border-radius: 50%;
+                    background: red;
+                    position: relative;
+                    button{
+                        font-size: 0px;
+                        width: 10px;
+                        height: 10px;
+                        border: none;
+                        border-radius: 50%;
+                        background: red;
+                    
+                    }
+                }
+                li.slick-active::after {
+                    position: absolute;
+                    top: 50%;
+                    left:50%;
+                    transform: translate(-50%,-50%);
+                    width: 25px;
+                    height: 25px;
+                    border-radius: 50%;
+                    border: 2px solid red;
+                    /* background-color: black; */
+                    content: "";
+                }
+            }
+            .employe-slider-itam {
+                margin: 0 15px;
+                .employe-img {
+                    padding: 0 22px;
+                    
+                    img {
+                        width: 100%;
+                    }
+                }
+    
+                .employe-info {
+                    box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.05);
+                    padding-top: 60px;
+                    padding-bottom: 30px;
+                    margin-top: -55px;
+                    border-radius: 5px;
+                    .social-icon {
+                        gap: 30px;
+                        margin-bottom: 30px;
+                        margin-top: 30px;
+    
+                        a {
+                            width: 35px;
+                            height: 35px;
+                            background-color: var(--section-background);
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            color: var(--black);
+                            transition: var(--transision);
+    
+                            &:hover {
+                                color: var(--white);
+                                background-color: var(--primary);
+                            }
+                        }
+                    }
+    
+                    .employe-text {
+                        h4{
+                            font-family: var(--font-secondary);
+                            font-size: 24px;
+                            font-weight: 700;
+                            line-height: 30px;
+                        }
+                    }
+                }
+    
+            }
+        }
+    }
+}
+
+
+
+
+

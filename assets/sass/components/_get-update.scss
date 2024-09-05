@@ -1,0 +1,86 @@
+.get-updates-area {
+    margin-bottom: 135px;
+
+    .get-updates-bg {
+        background-color: var(--black);
+        padding: 40px 0;
+        position: relative;
+        &::before{
+            content: "";
+            position: absolute;
+            width: 50%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background-color: var(--primary);
+           clip-path: polygon(0 0, calc(100% - 90px) 0, 100% 100%, 0% 100%);
+        }
+        .get-updates-info {
+            max-width: 440px;
+            position: relative;
+            z-index: 1;
+
+            h2 {
+                font-size: 48px;
+                font-size: 700;
+                line-height: 60px;
+                font-family: var(--font-secondary);
+                color: var(--white);
+                margin-bottom: 10px;
+            }
+
+            p {
+                color: var(--white);
+            }
+        }
+
+        .contact-info {
+            gap: 30px;
+            .icon {
+                width: 88px;
+                height: 88px;
+                background-color: var(--primary);
+                i{
+                    font-size: 40px;
+                    line-height: 40px;
+                    color: var(--white);
+                }
+            }
+
+            .text {
+                font-family: var(--font-secondary);
+                font-size: 24px;
+                font-weight: 700;
+                line-height: 30px;
+                color: var(--white);
+
+                .number {
+                    a {
+                        font-family: var(--font-secondary);
+                        font-size: 32px;
+                        font-weight: 700;
+                        line-height: 41.6px;
+                        color: var(--white);
+                    }
+                }
+            }
+            &:hover{
+                .icon{
+                    background-color: var(--white);
+                    i{
+                        color: var(--primary);
+                    }
+                }
+            }
+            &:hover{
+                .text{
+                    h3{
+                        a{
+                            color: var(--primary);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

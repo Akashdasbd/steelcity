@@ -1,0 +1,330 @@
+/*
+  Theme Name: SteelCity - Construction Building Template
+  Support: info@gmail.com
+  Description: SteelCity - Construction Building Template
+  Version: 1.0
+*/
+
+/* CSS Index
+============================
+01. Variable CSS
+02. Common CSS
+03. Button
+04. Header
+05. Search
+06. OffCanvas
+07. Mobile Menu
+08. Banner
+09. About
+10. Services
+11. Work
+12. Counter
+13. Employee
+14. Get Updates
+15. Working Process
+16. Faq
+17. Testimonial
+18. Messages
+19. News
+20. Footer
+21. Breadcrumb
+22. Contact Form
+23. Contact Map
+24. Call to Action
+============================
+*/
+
+/*=============================
+	1. Google Fonts
+===============================*/
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&family=Rubik:wght@300;400;500;600;700;800&display=swap');
+
+/*=============================
+	01. Variable CSS start
+===============================*/
+:root {
+	--body-font-family: 'Rubik', sans-serif;
+	--font-secondary: 'Rajdhani', sans-serif;
+	--link-font-family: 'Rajdhani', sans-serif;
+	--primary: #DF2339;
+	--black: #171717;
+	--white: #ffffff;
+	--footer-font-colour: rgba(255, 255, 255, 0.8);
+	--paragraph-color: #616670;
+	--section-background: #F3F3F3;
+	--body-font-size: 16px;
+	--body-font-weight: 400;
+	--body-line-height: 1.875em;
+	--transision: all 0.3s ease-out 0s;
+	--border-colour: #E3E3E3;
+}
+
+
+/*=============================
+	02. Common CSS start
+===============================*/
+* {
+	margin: 0;
+	padding: 0;
+	outline: none;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: var(--body-font-family);
+	font-weight: var(--body-font-weight);
+	font-size: var(--body-font-size);
+	line-height: var(--body-line-height);
+	color: var(--black);
+	overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0;
+	padding: 0;
+}
+
+a,
+span,
+small {
+	display: inline-block;
+}
+
+a,
+button {
+	-webkit-transition: all 0.3s ease-out 0s;
+	-moz-transition: all 0.3s ease-out 0s;
+	-ms-transition: all 0.3s ease-out 0s;
+	-o-transition: all 0.3s ease-out 0s;
+	transition: all 0.3s ease-out 0s;
+	text-decoration: none;
+}
+
+a:focus,
+.btn:focus,
+button:focus {
+	text-decoration: none;
+	outline: none;
+	box-shadow: none;
+}
+
+
+ul,
+ol {
+	margin: 0;
+	padding: 0;
+}
+
+p {
+	font-size: var(--body-font-size);
+	font-weight: var(--body-font-weight);
+	line-height: var(--body-line-height);
+	color: var(--paragraph-color);
+	margin: 0;
+	padding: 0;
+}
+
+*::-moz-selection {
+	background: var(--primary);
+	color: var(--white);
+	text-shadow: none;
+}
+
+::-moz-selection {
+	background: var(--primary);
+	color: var(--white);
+	text-shadow: none;
+}
+
+::selection {
+	background: var(--primary);
+	color: var(--white);
+	text-shadow: none;
+}
+
+
+// theme btn
+.theme-btn {
+	color: var(--white);
+	font-family: var(--font-secondary);
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 32px;
+	letter-spacing: 1.28px;
+	background-color: var(--primary);
+	border-radius: 5px;
+	padding: 14px 30px;
+	svg{
+		stroke: var(--white);
+		width: 16px;
+		height: 16px;
+		margin-left: 5px;
+		stroke-width: 3px;
+	}
+	&:hover{
+		background-color: var(--black);
+	}
+}
+
+.theme-btn-boder {
+	color: var(--black);
+	font-family: var(--font-secondary);
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 32px;
+	letter-spacing: 1.28px;
+	border: 1px solid var(--primary);
+	border-radius: 5px;
+	padding: 14px 30px;
+	svg{
+		stroke: var(--black);
+		width: 16px;
+		height: 16px;
+		margin-left: 5px;
+		stroke-width: 3px;
+	}
+	&:hover{
+		background-color: var(--primary);
+		color: var(--white);
+	}
+}
+.section-title {
+	margin-bottom: 60px;
+	.title {
+		font-size: 48px;
+		text-transform: capitalize;
+		font-family: var(--font-secondary);
+		font-weight: 700;
+
+	}
+	.white {
+		color: var(--white);
+	}
+	.dark {
+		color: var(--black);
+	}	
+	.sub-title {
+		font-size: 18px;
+		color: var(--primary);
+		font-family: var(--font-secondary);
+		font-weight: 700;
+		margin-bottom: 10px;
+		position: relative;
+		margin-left: 30px;
+		letter-spacing: 4px;
+		display: inline;
+		&.white {
+			color: var(--white);
+		}
+	}	
+}
+
+
+
+
+// .section-title .sub-title.white {
+// 	color: var(--white);
+// }
+
+.sub-title::before {
+	position: absolute;
+	top: 50%;
+	right: -30px;
+	transform: translateY(-50%);
+	width: 20px;
+	height: 1px;
+	background-color: var(--primary);
+	content: "";
+}
+
+.sub-title::after {
+	position: absolute;
+	top: 50%;
+	left: -30px;
+	transform: translateY(-50%);
+	width: 20px;
+	height: 1px;
+	background-color: var(--primary);
+	content: "";
+}
+
+.section-title .no-after {
+	margin-left: 0;
+}
+
+.section-title .no-after::after {
+	display: none;
+	margin-left: 0 ;
+}
+.section-title .no-before::before {
+	display: none;
+}
+
+
+// .section-title .title.white {
+// 	color: var(--white);
+// }
+
+.container {
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.row {
+	--bs-gutter-x: 30px;
+}
+
+// .row.g-0 {
+// 	--bs-gutter-x: 0;
+// }
+
+// .gutter-y-30 {
+// 	--bs-gutter-y: 30px;
+// }
+.preloader{
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background-color: var(--white);
+	z-index: 99999;
+}
+
+.loader {
+	height: 15px;
+	aspect-ratio: 4;
+	--_g: no-repeat radial-gradient(farthest-side,#000 90%,#0000);
+	background: 
+	  var(--_g) left, 
+	  var(--_g) right;
+	background-size: 25% 100%;
+	display: grid;
+  }
+  .loader:before,
+  .loader:after {
+	content: "";
+	height: inherit;
+	aspect-ratio: 1;
+	grid-area: 1/1;
+	margin: auto;
+	border-radius: 50%;
+	transform-origin: -100% 50%;
+	background: var(--primary);
+	animation: l49 1s infinite linear;
+  }
+  .loader:after {
+	transform-origin: 200% 50%;
+	--s:-1;
+	animation-delay: -.5s;
+  }
+  
+  @keyframes l49 {
+	58%,
+	100% {transform: rotate(calc(var(--s,1)*1turn))}
+  }

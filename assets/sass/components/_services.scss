@@ -1,0 +1,38 @@
+.services {
+    background-color: var(--section-background);
+    padding-bottom: 120px;
+
+    .section-title {
+        .sub-title {
+            margin-left: 0;
+            color: var(--black);
+        }
+    }
+
+    p {
+        margin-top: 40px;
+    }
+
+    .services-main {
+        .services-itam {
+            margin-top: 10px;
+            padding-top: 10px;
+            border-top: 1px solid var(--border-colour);
+
+            &:first-child {
+                margin-top: 0;
+            }
+
+            &:last-child {
+                border-bottom: 1px solid var(--border-colour);
+            }
+
+            .title {
+                font-family: var(--font-secondary);
+                font-size: 24px;
+                font-weight: 700;
+                line-height: 30px;
+            }
+        }
+    }
+}

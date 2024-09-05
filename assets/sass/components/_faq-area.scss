@@ -1,0 +1,88 @@
+.faq-area {
+    margin-bottom: 120px;
+    .section-title {
+        margin-bottom: 30px;
+    }
+
+    .section-title {
+        .title {
+            font-size: 42px;
+        }
+    }
+
+    .faq-body {
+        .accordion-item {
+            margin-bottom: 30px;
+            border: 1px solid rgba(227, 227, 227, 1);
+            .accordion-header {
+                button {
+                    
+                    padding: 26px 24px;
+                    text-align: left;
+                    text-decoration: none;
+                    border-radius: 5px;
+                    font-family: var(--font-secondary);
+                    font-size: 18px;
+                    font-weight: 700;
+                    line-height: 27px;
+                    color: var(--blick);
+                    position: relative;
+                    &:not(.collapsed):after{
+                        background-image: url("..//../img/icons/minus-icon.svg") !important;
+                    }
+                    &::after{
+                        content: "";
+                        position: absolute;
+                        width: 40px;
+                        height: 40px;
+                        top: 50%;
+                        right:  -20px;
+                        background-color: var(--primary);
+                        transform: translateY(-50%);
+                        background-image: url("..//..//img/icons/plus-icon.svg");
+                        background-position: center center;
+                        background-repeat: no-repeat;
+                    }
+
+                }
+            }  
+            .card-body{
+                border-top: 1px solid rgba(227, 227, 227, 1);
+                padding: 11px 24px;
+            }
+        }
+    }
+    .img{
+        .img-1{
+            width: 401px;
+            border-radius: 5px;
+            position: relative;
+            &::after{
+                content: "";
+                position: absolute;
+                width: 22px;
+                height: 278px;
+                top: 34px;
+                right:-34px;
+                background-color: var(--primary);
+                border-radius: 5px;
+            }
+            img{
+                max-width: 100%;
+            }
+        }
+        .img-2{
+            width: 437px;
+           
+
+            img{
+                clip-path: polygon(96% 0, 89% 82%, 100% 100%, 0 100%, 0% 50%, 0 0);
+                max-width: 100%;
+                object-fit: cover;
+                margin-top: -174px;
+                margin-left: 42px;
+                border: 5px solid rgba(255, 255, 255, 1);
+            }
+        }
+    }
+}

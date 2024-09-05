@@ -1,0 +1,134 @@
+/*=============================
+	04. Header part
+===============================*/
+
+/* header area one start */
+#header-fixed-height.active-height {
+    display: block;
+    height: 100px;
+}
+.header-area-one{
+	background-color:var(--section-background);
+	padding: 0 40px 0 50px;
+	position: relative;
+	z-index: 999;
+	&.sticky-menu {
+		position: fixed;
+		left: 0;
+		margin: auto;
+		top: 0;
+		width: 100%;
+		background-color: var(--white);
+		animation: 700ms ease-in-out 0s normal none 1 running fadeInDown;
+		box-shadow: 0 10px 15px rgba(25, 25, 25, 0.1);
+		border-radius: 0;
+	}
+	.navbar{
+		padding: 0;
+	}
+	.navbar-brand{
+		margin-right: 40px;
+	}
+	.nav-item{
+		margin-left: 24px;
+		position: relative;
+		.nav-link{
+			font-size: 16px;
+			color: var(--black);
+			font-weight: 500;
+			line-height: 80px;
+			padding: 0;
+		}
+		i{
+			margin-left: 5px;
+			font-size: 10px;
+			font-weight: 900;
+		}
+		.sub-menu{
+			position: absolute;
+			left: 0;
+			top: 100%;
+			min-width: 230px;
+			background-color: var(--white);
+			box-shadow: 0px 10px 30px 0px rgba(137, 139, 142, 0.2);
+			padding: 18px 0;
+			transition: var(--transision);
+			visibility: hidden;
+			opacity: 0;
+			li a{
+				color: var(--black);
+				font-weight: 500;
+				line-height: 38px;
+				padding: 0 20px;
+				width: 100%;
+				&:hover{
+					color: var(--primary);
+				}
+			}
+		}
+		&:hover{
+			.sub-menu{
+				margin-top: 0;
+				visibility: visible;
+				opacity: 1;
+			  }
+			.nav-link {
+				color: var(--primary);
+			  }
+		}
+	}
+	.header-right-option{
+		.social-icon{
+			a{
+				color: var(--black);
+				font-size: 15px;
+				line-height: 15px;
+				margin-left: 15px;
+				&:hover{
+					color: var(--primary);
+				}
+			}
+		}
+		.call-us{
+			margin-left: 71px;
+			a{
+				.call-icon{
+					color:var(--primary);
+					width:55px ;
+					height: 55px;
+					background-color:rgba(223, 35, 57, .10);
+					transition: var(--transision);
+					margin-right: 15px;
+				}
+				.number{
+					p{
+						font-size: 16px;
+						font-weight: 400;
+						line-height: 30px;
+						color: var(--black);
+					}
+					.title{
+						font-family: var(--font-secondary);
+						color:var(--black);
+						font-size: 18px;
+						font-weight: 700;
+						line-height: 27px;
+						transition: var(--transision);
+					}
+				}
+				&:hover{
+					.call-icon
+					{
+						background-color: var(--primary);
+						color: var(--white);
+					}
+					.title{
+						color: var(--primary);
+					}
+				}
+			}
+		}
+	}
+}
+
+/* header area one end */
