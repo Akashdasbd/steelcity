@@ -36,5 +36,16 @@
                 color: var(--paragraph-color);
             }
         }
+        &.without-shadow-counter{
+            box-shadow: none;
+            border-left: 1px solid var(--border-colour);
+        }
+    }
+    .counter-coloumn{
+        &:first-child{
+            .without-shadow-counter{
+                border-left: 0;
+            }
+        }
     }
 }

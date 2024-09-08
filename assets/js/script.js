@@ -80,6 +80,18 @@ $('.projects-slider').slick({
     arrows: false,
   });
 
+  $('.about-testimonial-slider').slick({
+    dots: false,
+    autoplay: true,
+    speed: 300,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: true,
+    prevArrow: '<i class="fas left icon fa-arrow-left"></i>',
+		nextArrow: '<i class="fas right icon fa-arrow-right"></i>',
+    gap: '24px',
+  });
+
   $('.projects-slider-prev').on('click', function () {
     $('.projects-slider').slick('slickPrev');
   });
@@ -119,6 +131,11 @@ $('.projects-slider').slick({
         );
       }
     });
+
+    // data-background js
+  $("[data-background]").each(function(){
+      $(this).css("background-image", "url(" + $(this).attr("data-background") + ")");
+  });
   
 });
 

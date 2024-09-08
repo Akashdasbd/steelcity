@@ -1,0 +1,47 @@
+.call-to-action-area {
+    background-color: var(--primary);
+
+    .image {
+        clip-path: polygon(0 0, 100% 0, calc(100% - 8%) 100%, 0% 100%);
+        height: 100%;
+
+        img {
+            height: 100%;
+        }
+    }
+
+    .info {
+        padding: 85px 0;
+        position: relative;
+
+        .phone-icon {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            background-color: var(--white);
+            text-align: center;
+            line-height: 70px;
+            color: var(--primary);
+            font-size: 30px;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: -100px;
+        }
+
+        .title {
+            font-family: var(--font-secondary);
+            font-size: 32px;
+            font-weight: 700;
+            line-height: 41.6px;
+            color: var(--white);
+            margin-bottom: 5px;
+            a{
+                color: var(--white);
+            }
+        }
+        p{
+            color: var(--white);
+        }
+    }
+}

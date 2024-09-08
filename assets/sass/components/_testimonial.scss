@@ -1,18 +1,21 @@
-.testimonial-area{
+.testimonial-area {
     margin-bottom: 120px;
-    .testimonial-main{
-        .testimonial-slider{
+
+    .testimonial-main {
+        .testimonial-slider {
             .slick-list {
                 padding: 20px 0;
                 margin: -20px 0;
             }
+
             ul.slick-dots {
                 display: flex;
                 justify-content: center;
                 list-style: none;
                 gap: 16px;
                 margin-top: 40px;
-                li  {
+
+                li {
                     font-size: 0px;
                     width: 10px;
                     height: 10px;
@@ -20,21 +23,23 @@
                     border-radius: 50%;
                     background: red;
                     position: relative;
-                    button{
+
+                    button {
                         font-size: 0px;
                         width: 10px;
                         height: 10px;
                         border: none;
                         border-radius: 50%;
                         background: red;
-                    
+
                     }
                 }
+
                 li.slick-active::after {
                     position: absolute;
                     top: 50%;
-                    left:50%;
-                    transform: translate(-50%,-50%);
+                    left: 50%;
+                    transform: translate(-50%, -50%);
                     width: 25px;
                     height: 25px;
                     border-radius: 50%;
@@ -43,27 +48,102 @@
                     content: "";
                 }
             }
-            .testimonial-slider-itam{
+
+            .testimonial-slider-itam {
                 margin: 0 15px;
                 position: relative;
                 padding: 40px;
-                background-color:var(--white);
+                background-color: var(--white);
                 border-radius: 5px;
                 box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.07);
-                .quote-icon{
+
+                .quote-icon {
                     position: absolute;
                     top: 60px;
-                    right:40px;
-                    img{
+                    right: 40px;
+
+                    img {
                         width: 80px;
                         display: block;
                     }
                 }
-                .testimonial-info{
-                    .rating{
+
+                .testimonial-info {
+                    .rating {
                         color: var(--primary);
                         font-size: 14px;
                         margin-top: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.about-us-testimonial-area {
+    padding: 120px 0;
+    background-color: var(--section-background);
+
+    .shape {
+        position: absolute;
+        top: 0;
+    }
+
+    .shape1 {
+        left: 78px;
+    }
+
+    .shape2 {
+        right: 78px;
+    }
+
+    .about-testimonial-slider {
+        position: relative;
+        .icon{
+            width: 67px;
+            height: 67px;
+            background-color: var(--white);
+            border-radius: 50%;
+            text-align: center;
+            line-height: 67px;
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            border: 1px solid var(--primary);
+            z-index: 9;
+            transition: var(--transision);
+            &:hover{
+                background-color: var(--primary);
+                color: var(--white);
+            }
+        }
+        .right{
+            right: 0;
+        }
+        .testimonial-slider-item {
+            .testimonial-image {
+                width: 100px;
+                height: 100px;
+                margin: 0 auto;
+                overflow: hidden;
+                margin-bottom: 30px;
+            }
+
+            .testimonial-info {
+                .title {
+                    margin-bottom: 20px;
+                    font-family: var(--font-secondary);
+                    font-size: 24px;
+                    font-weight: 700;
+                    line-height: 30px;
+                }
+                .rating{
+                    margin-bottom: 30px;
+                    i{
+                        color: var(--primary);
+                        font-size: 16px;
+                        margin: 0 5px;
                     }
                 }
             }

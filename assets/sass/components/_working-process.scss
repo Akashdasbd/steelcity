@@ -21,8 +21,10 @@
             box-shadow: 0px 0px 60px 0px rgba(0, 0, 0, 0.05);
             margin-bottom: 68px;
             position: relative;
+
             .info {
                 gap: 20px;
+
                 .text {
                     font-family: var(--font-secondary);
                     font-size: 24px;
@@ -31,12 +33,14 @@
                     max-width: 118px;
                 }
             }
-            .number{
-                h3{
+
+            .number {
+                h3 {
                     color: rgba(23, 23, 23, 0.2);
                 }
             }
-            &::before{
+
+            &::before {
                 position: absolute;
                 content: "";
                 top: 100%;
@@ -45,9 +49,11 @@
                 width: 315px;
                 background-image: url("..//..//img/working-process/shape-for-odd.png");
             }
-            &:nth-child(even){
+
+            &:nth-child(even) {
                 flex-direction: row-reverse;
-                &::before{
+
+                &::before {
                     position: absolute;
                     content: "";
                     top: 100%;
@@ -55,6 +61,74 @@
                     height: 64px;
                     width: 315px;
                     background-image: url("..//..//img/working-process/shape-for-even.png");
+                }
+            }
+
+            &:last-child::before {
+                display: none;
+            }
+        }
+
+        .working-process-item-two {
+            padding: 0 40px;
+            margin-bottom: 53px;
+            position: relative;
+            .info {
+                .text {
+                    margin-left: 20px;
+                    font-family: var(--font-secondary);
+                    font-size: 24px;
+                    font-weight: 700;
+                    line-height: 30px;
+                    max-width: 118px;
+                    width: 100%;
+                }
+            }
+
+            .number {
+                width: 88px;
+                height: 155px;
+                border-radius: 10px 10px 0px 0px;
+                background-color: var(--section-background);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+                &::before{
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    left: 50%;
+                    background-color: var(--section-background);
+                    width: 104px;
+                    height: 15px;
+                    transform: translateX(-50%);
+                    border-radius: 7px 7px 0 0;
+                }
+                h3 {
+                    font-family: var(--font-secondary);
+                    font-size: 32px;
+                    font-weight: 700;
+                    line-height: 41.6px;
+                }
+            }
+            &::before{
+                content: "";
+                position: absolute;
+                background-image: url("../img/working-process/shape-for-odd.png");
+                top: 100%;
+                width: 315px;
+                height: 64px;
+            }
+            &:nth-child(even){
+                flex-direction: row-reverse;
+                &::before{
+                    content: "";
+                    position: absolute;
+                    top: 100%;
+                    width: 315px;
+                    height: 64px;
+                    background-image: url("../img/working-process/shape-for-even.png");
                 }
             }
             &:last-child::before{
